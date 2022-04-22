@@ -72,7 +72,7 @@ RUN git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/cust
 RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 RUN git clone https://github.com/lukechilds/zsh-better-npm-completion ~/.oh-my-zsh/custom/plugins/zsh-better-npm-completion
 
-ADD --chown=gitpod:gitpod .gitpod/HOME/* $HOME/
+# ADD --chown=gitpod:gitpod .gitpod/HOME/* $HOME/
 
 # prefetch gitstatusd
 RUN ~/.oh-my-zsh/custom/themes/powerlevel10k/gitstatus/install
